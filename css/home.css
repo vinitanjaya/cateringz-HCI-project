@@ -1,0 +1,354 @@
+@font-face{
+    font-family: 'League Spartan';
+    src:url("../Assets/LeagueSpartan-Regular.ttf") format("trueType");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+
+body{
+    height: 100vh;
+    background-color: #FAF5EF;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap:32px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #69513C;
+}
+
+a:hover{
+    color: #CCB89D;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-color: #EDE1D1;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 30px;
+}
+
+.barMenu{
+    height:20px;
+    cursor: pointer;
+    display: none;
+}
+
+nav.links{
+    display: flex;
+    gap: 2rem;
+}
+
+.action_btn{
+    background-color: #c2a790;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.349);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 200px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    max-width: 300px; 
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.briefInfo{
+    background-image: url(../Assets/home/gambar\ homepage.jpg);
+    width:100%;
+    background-size: cover;
+}
+
+.briefInfoCtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:#69513C;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUsbtn{
+    margin-top: 20px;
+    background-color: #c2a790;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.aboutUsbtn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color:#69513C;
+    margin-top: 100px;
+}
+
+.promoImg{
+    max-width:70%; 
+    height: auto;
+    margin-top: 20px;
+}
+
+.recommendation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color:#69513C;
+    margin-top: 100px;
+} 
+
+.carousel {
+    position: relative;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+}
+
+img.display-image {
+    display: block;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    padding: 2mm;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color:#FAF5EF;
+}
+
+.carousel button:hover{
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.next{
+    right:0;
+}
+
+.prev{
+    left:0;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: 0.5} to {opacity: 1};
+}
+
+.checkMoreBtn{
+    margin-top: 20px;
+    background-color: #c2a790;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius:5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.checkMoreBtn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+footer {
+    margin-top: 100px;
+    background-color:#EDE1D1;
+    color: #5B4636;
+}
+
+.logoFooter{
+    width:200px;
+    margin-top:20px;
+}
+
+.containerFooter{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footerContent {
+    margin:auto;
+    padding:7px;
+}
+
+.footerContent h4 {
+    margin-top:20px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.footerContent p {
+    margin: 5px 0;
+}
+
+.shopee, .tokped {
+    margin-right: 5px;
+    width: 80px;
+}
+
+.footerBottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #D3C6AD;
+    margin-top: 20px;
+    margin: 0;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+
+.iconEmail, .iconPhone, .iconIg{
+    vertical-align: middle;
+    margin-right: 8px;
+    width:28px;
+    display:column;
+}
+
+@media screen and (max-width: 768px) {
+    /* navigation bar */
+    nav .links,
+    nav .action_btn{
+        display: none;
+    }
+
+    .barMenu{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+        left: 2rem;
+        width: unset;
+    }
+
+    /* content */
+    .promo h1, .recommendation h1{
+        font-size:25px;
+    }
+
+    /* footer */
+    .containerFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerContent {
+        text-align: center;
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        transform: scale(90%);
+    }
+
+    .footerContent h4, .footerContent p, .contact-info div {
+        text-align: center;
+        display: block;
+    }
+
+    .contact-info div {
+        justify-content: center;
+    }
+
+    .contact-info div img {
+        margin: 0 auto 8px auto;
+    }
+}

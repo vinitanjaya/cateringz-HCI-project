@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CAteriNgz</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../java script/barButton.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../Assets/CAteriNgz logo.png" class="logo">
+            <img src="../Assets/nav bar/barMenu.png" class="barMenu">
+            <ul class="links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="productsPage.html">Products</a></li>
+                <li><a href="testimonialPage.html">Testimonial</a></li>
+                <li><a href="aboutUsPage.html">About Us</a></li>
+            </ul>
+            <a href="registerPage.html" class="action_btn">Register</a>
+        </nav>
+
+        <div class="dropdown_menu">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="productsPage.html">Products</a></li>
+            <li><a href="testimonialPage.html">Testimonial</a></li>
+            <li><a href="aboutUsPage.html">About Us</a></li>
+            <li><a href="registerPage.html" class="action_btn">Register</a></li>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="register-container">
+            <h1>REGISTER</h1>
+            <form action="" method="get" id="registration-form">
+                <div class="input-group">
+                    <img src="../Assets/registration/person.png" class="person">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="input-group">
+                    <img src="../Assets/registration/email.png" class="emailIcon">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <img src="../Assets/registration/location.png" class="address">
+                    <input type="text" id="address" name="address" placeholder="Address">
+                </div>
+                <div class="input-group gender">
+                    <img src="../Assets/registration/gender.png" class="gender">
+                    <select name="Gender" id="gender">
+                        <option value="None">None</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label><img src="../Assets/registration/date.png" class="date">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" placeholder="Date of Birth">
+                </div>
+                <button onclick="validateAll()" type="button" class="btn" id="submitBtn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="../java script/register.js"></script>
+    <footer>
+        <div class="containerFooter">
+            <div class="footerContent">
+                <img src="../Assets/CAteriNgz logo.png" class="logoFooter">
+                <p>Jl. Delima V No. 22, Tanjung Duren, Jakarta Barat</p> 
+            </div>
+
+            <div class="footerContent">
+                <h4>OPERATIONAL HOURS</h4>
+                <p>Everyday 06:00AM - 07:00PM</p>
+            </div>
+
+            <div class="footerContent">
+                <h4>ALSO AVAILABLE AT</h4>
+                <div class="shopImg">
+                    <img src="../Assets/footer/shopee1.png" class="shopee">
+                    <img src="../Assets/footer/tokopedia.png" class="tokped">
+                </div>
+            </div>
+
+            <div class="footerContent">
+                <h4>CONTACT</h4>
+                <div class="contact-info">
+                    <div><img src="../Assets/footer/email.png" class="iconEmail"> CAteriNgz@gmail.com</div>
+                    <div><img src="../Assets/footer/phone1.png" class="iconPhone"> 081245668923</div>
+                    <div><img src="../Assets/footer/ig.png" class="iconIg"> @CAteriNgz</div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>©CAteriNgz 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
