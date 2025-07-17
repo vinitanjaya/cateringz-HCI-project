@@ -1,0 +1,1 @@
+This is my project for the Human-Computer Interaction (HCI) course, titled Cateringz. It is a responsive website for a fictional catering service, built using HTML, CSS, and JavaScript. 
